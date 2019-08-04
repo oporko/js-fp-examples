@@ -1,0 +1,29 @@
+A multiple-choice examination consists of 20 questions. Each question has five choices, labeled A, B, C, D
+and E. All data for that exam is stored in a file exam.txt. The first line of data contains the correct
+answers to the twenty questions in the first 20 consecutive (one after the other) character positions. For
+Example:
+
+BECDCBAADEBACBEDDBED
+
+Each subsequent line in the file contains the answers for a single candidate. Data on a line consists of a
+candidate number (an integer), then by one or more spaces, followed by the twenty answers given by
+the candidate in the next 20 consecutive character positions. An X is used if a candidate did not answer
+a particular question. A sample line is as follows:
+
+5555 BECDCXACCAEDCBEDDACB
+
+There can be an unlimited number of candidates. A line containing a “candidate number” 0 indicates
+the end of the data.
+
+A student’s final score is calculated by adding up the points awarded for all the questions. Points for a
+question are awarded as follows:
+
+* Correct answer 4 points
+* Wrong answer -1 point
+* No answer 0 points
+
+Write a C# program to process the data in the file exam.txt and print a report that shows:
+
+1. Each candidate number and their final score (the total points obtained by the candidate).
+2. The total number of candidates
+3. The number of correct responses to each of the 20 questions.
