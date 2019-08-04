@@ -185,7 +185,6 @@ ${formatCorrectAnswers(exam)}`;
 
 // process -> Result string string
 const program = compose(
-  map(log),
   map(createReport),
   map(calcCorrect),
   map(calcScores),
@@ -193,4 +192,4 @@ const program = compose(
   getExamFilename
 );
 
-program(process);
+log(program(process).value);
